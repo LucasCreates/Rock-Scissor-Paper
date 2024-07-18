@@ -1,0 +1,134 @@
+body{
+	
+	display: flex;
+	background: #3632a8 url("images/starback.png");
+    background-size: cover;                 
+    background-repeat: no-repeat;
+    min-height: 98.1vh; 
+	justify-content: center;
+	align-content: center;
+}
+
+#start-btn{
+	position: absolute;
+	top: 40%;
+	margin:0 auto;
+	color: #fff;
+	padding: 30px 50px 30px 50px;
+	font-size:  40px;
+	border-radius: 15px;
+	background: #ffe640;
+	font-weight: bold;
+	font-family: papyrus, sans-serif;
+
+	text-shadow: #292928 1px 1px 0;
+}
+#start-btn:hover{
+	box-shadow: 0px 0px 32px -6px rgba(246,255,115,1);
+}
+#start-btn:active{
+	box-shadow: 0px 0px 32px 9px rgba(246,255,115,1);
+}
+
+.container{
+	position: absolute;
+	bottom: 15%;
+	display: none;
+}
+.container button{
+	width: 200px;
+	height: 70px;
+	margin: 10px;
+	font-size: 24px;
+	border-radius: 15px;
+	background: #ffe640;
+	font-weight: bold;
+
+	font-family: papyrus, sans-serif;
+
+	text-shadow: #292928 1px 1px 0;
+}
+.active{
+	width: 200px;
+	height: 70px;
+	margin: 10px;
+	font-size: 24px;
+	border-radius: 15px;
+	background: blue;
+	
+}
+
+.star{
+	color: yellow;
+	
+	position: absolute;
+	top: 35%;
+}
+.hands{
+	display: none;
+}
+.player-hand-img{
+	height: 300px;
+	width: 350px;
+	position: absolute;
+	top: 25%;
+	left: 20%;
+	display: none
+}
+.computer-hand-img{
+	height: 300px;
+	width: 350px;
+	position: absolute;
+	top: 25%;
+	right: 20%;
+	display: none
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 400px;
+	background: #ffe640;
+	border: 5px solid #3e42fa;
+	border-radius: 0 20% 0 20%;
+	
+	box-shadow: 5px 5px 0px 0px #6568fc, 10px 10px 0px 0px #8b8cf7, 15px 15px 0px 0px #b7b8f7, 20px 20px 0px 0px #cbccf5, 25px 25px 0px 0px #e3e4fc, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+.background-effect{
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 400px;
+	background: #ffe640;
+	border: 2px solid #000;
+	border-radius: 0 20% 0 20%;
+	z-index: 1;
+}
+.score-display{
+	flex: 1;
+	color: #3f02cc;
+	text-align: center;
+	z-index: 2;
+	margin: 20px;
+	font-family: papyrus, sans-serif;
+
+	text-shadow: #7968a1 1px 1px 0;
+}
+
+.play-round{
+	display: none;
+	position: absolute;
+	top: 70%;
+	font-size: 24px;
+	border-radius: 15px;
+	background: #ffe640;
+	font-weight: bold;
+
+	font-family: papyrus, sans-serif;
+
+	text-shadow: #292928 1px 1px 0;
+}
